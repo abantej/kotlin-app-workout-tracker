@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="10dp">
+    android:padding="10dp"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -33,22 +33,37 @@
         android:id="@+id/etUserMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="326dp"
+        android:layout_marginBottom="181dp"
         android:ems="10"
+        android:hint="Enter your Message"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnShareToOtherApps"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnShowWorkouts"
-        android:hint="Enter your Message"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnSendMsgToNextActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
+        android:layout_width="459dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="44dp"
+        android:text="Send Data To Next Activity"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUserMessage"
-        android:text="Send Data To Next Activity"/>
+        app:layout_constraintTop_toBottomOf="@+id/etUserMessage" />
+
+    <Button
+        android:id="@+id/btnShareToOtherApps"
+        android:layout_width="215dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="260dp"
+        android:text="Share to other apps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserMessage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
