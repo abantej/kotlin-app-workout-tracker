@@ -1,10 +1,11 @@
-package com.abantej.kotlin.app.workout.tracker
+package com.abantej.kotlin.app.workout.tracker.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import com.abantej.kotlin.app.workout.tracker.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

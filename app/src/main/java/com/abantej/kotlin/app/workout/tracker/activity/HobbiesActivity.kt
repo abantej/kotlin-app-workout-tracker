@@ -1,9 +1,11 @@
-package com.abantej.kotlin.app.workout.tracker
+package com.abantej.kotlin.app.workout.tracker.activity
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.abantej.kotlin.app.workout.tracker.adapter.HobbiesAdapter
+import com.abantej.kotlin.app.workout.tracker.R
+import com.abantej.kotlin.app.workout.tracker.model.Supplier
 import kotlinx.android.synthetic.main.activity_hobbies.*
 
 class HobbiesActivity : AppCompatActivity() {
@@ -11,7 +13,10 @@ class HobbiesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hobbies)
+        setupRecyclerView()
+    }
 
+    private fun setupRecyclerView() {
         val layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         recyclerView.layoutManager = layoutManager
