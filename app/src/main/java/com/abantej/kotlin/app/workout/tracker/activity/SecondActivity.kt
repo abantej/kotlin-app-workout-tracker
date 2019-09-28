@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.abantej.kotlin.app.workout.tracker.R
+import com.abantej.kotlin.app.workout.tracker.showToast
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
@@ -15,7 +16,7 @@ class SecondActivity : AppCompatActivity() {
         val bundle: Bundle? = intent.extras
         val msg = bundle!!.getString("userMessage")
 
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+        showToast(msg)
 
         txvUserMessage.text = msg
     }

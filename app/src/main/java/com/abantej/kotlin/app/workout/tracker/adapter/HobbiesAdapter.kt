@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.abantej.kotlin.app.workout.tracker.model.Hobby
 import com.abantej.kotlin.app.workout.tracker.R
+import com.abantej.kotlin.app.workout.tracker.showToast
 import kotlinx.android.synthetic.main.list_item.view.*
 
 class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyViewHolder>() {
@@ -34,7 +35,7 @@ class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : R
 
         init {
             itemView.setOnClickListener {
-                Toast.makeText(context, currentHobby!!.title + " Clicked !", Toast.LENGTH_SHORT).show()
+                context.showToast(currentHobby!!.title + " Clicked !")
             }
 
             itemView.imgShare.setOnClickListener {

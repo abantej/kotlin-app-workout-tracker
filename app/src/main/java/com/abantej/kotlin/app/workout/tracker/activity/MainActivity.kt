@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.abantej.kotlin.app.workout.tracker.R
+import com.abantej.kotlin.app.workout.tracker.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,12 +16,12 @@ class MainActivity : AppCompatActivity() {
 
         btnShowWorkouts.setOnClickListener {
             Log.i("MainActivity", "Button was clicked!")
-            Toast.makeText(this, "Button was clicked!", Toast.LENGTH_SHORT).show()
+            showToast("Button was clicked!")
         }
 
         btnSendMsgToNextActivity.setOnClickListener {
             val message: String = etUserMessage.text.toString()
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, message, Toast.LENGTH_LONG).show()
 
             // explicit intent
             val intent = Intent(this, SecondActivity::class.java)
