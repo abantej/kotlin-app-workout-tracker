@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">kotlin-app-workout-tracker</string>
+    <string name="btn_show_workouts">Show Workouts</string>
+    <string name="et_user_message">Enter your Message</string>
+    <string name="btn_send_msg_to_next_activity">Send Data To Next Activity</string>
+    <string name="btn_share_to_other_apps">Share to other apps</string>
+    <string name="btn_recycler_view_demo">Recycler View Demo</string>
+    <string name="btn_was_clicked">Button was clicked!</string>
 </resources>
