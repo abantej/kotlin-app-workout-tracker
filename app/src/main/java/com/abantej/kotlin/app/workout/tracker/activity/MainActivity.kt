@@ -5,17 +5,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import com.abantej.kotlin.app.workout.tracker.Constants
 import com.abantej.kotlin.app.workout.tracker.R
 import com.abantej.kotlin.app.workout.tracker.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        val TAG: String = MainActivity::class.java.simpleName
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         btnShowWorkouts.setOnClickListener {
-            Log.i("MainActivity", "Button was clicked!")
+            Log.i(MainActivity.TAG, "Button was clicked!")
             showToast("Button was clicked!")
         }
 
@@ -25,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
             // explicit intent
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("userMessage", message)
+            intent.putExtra(Constants.USER_MSG_KEY, message)
 
             startActivity(intent)
         }
