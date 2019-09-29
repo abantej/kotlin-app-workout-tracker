@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ehersisyo</string>
-    <string name="btn_show_workouts">Show workouts</string>
+    <string name="btn_show_workouts">Ipakita ang Workout</string>
     <string name="et_user_message">Enter your Message</string>
     <string name="btn_send_msg_to_next_activity">Send Data To Next Activity</string>
     <string name="btn_share_to_other_apps">Share to other apps</string>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">kotlin-app-workout-tracker</string>
+    <string name="app_name">Ehersisyo</string>
     <string name="btn_show_workouts">Afficher les séances d\'entraînement</string>
     <string name="et_user_message">Entrez votre message</string>
+    <string name="btn_send_msg_to_next_activity">Envoyer les données à la prochaine activitéy</string>
     <string name="btn_share_to_other_apps">Envoyer les données à l\'activité suivante</string>
     <string name="btn_recycler_view_demo">Partager avec d\'autres applications</string>
     <string name="btn_was_clicked">Recycler Voir la démo</string>
